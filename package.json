@@ -1,4 +1,24 @@
 {
   "name": "md-links",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "description": "MarkDown library",
+  "main": "index.js",
+  "dependencies": {
+    "bin-json": "^0.3.1",
+    "eslint-plugin-jest": "^23.0.4",
+    "jest": "^24.9.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "eslint": "eslint --ext .js src/ test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://https://github.com/Veronidas/SCL011-MD-Links.git"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0"
+  },
+  "author": "Laboratoria",
+  "license": "ISC"
 }
