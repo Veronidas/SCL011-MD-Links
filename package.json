@@ -4,20 +4,24 @@
   "description": "MarkDown library",
   "main": "index.js",
   "dependencies": {
-    "bin-json": "^0.3.1",
-    "eslint-plugin-jest": "^23.0.4",
-    "jest": "^24.9.0"
+    "bin-json": "^0.3.1"
   },
   "scripts": {
-    "test": "jest",
-    "eslint": "eslint --ext .js src/ test/"
+    "test": "jest --coverage",
+    "eslint": "eslint --ext .js test/",
+    "prettier": "prettier"
   },
   "repository": {
     "type": "git",
     "url": "https://https://github.com/Veronidas/SCL011-MD-Links.git"
   },
   "devDependencies": {
-    "eslint": "^6.6.0"
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-jest": "^23.0.4",
+    "prettier": "^1.19.1",
+    "jest": "^24.9.0"
   },
   "author": "Laboratoria",
   "license": "ISC"

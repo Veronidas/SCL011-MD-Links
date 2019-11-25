@@ -1,14 +1,13 @@
 const fs = require("fs");
 const path = require("path");
 
-module.exports = () => {
-  // ...
-};
+//el metodo readFile recibe 3 parametros: la ruta al archivo, la codificación
+// y una función que va a ser invocada cuando se lea el archivo( callback).
 
-function showMessage() {
-  const message = "Hi!!";
-
-  for (let i = 0; i < 5; i++) {
-    console.log(message);
+fs.readFile("vero.txt", "utf8", function(err, data) {
+  if (err) {
+    return console.log(err);
   }
-}
+
+  console.log(data);
+});
